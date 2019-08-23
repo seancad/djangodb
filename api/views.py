@@ -6,5 +6,5 @@ from .serializers import RentalSerializer
 from .models import Rental
 
 class RentalViewSet(viewsets.ModelViewSet):
-    queryset = Rental.objects.all().order_by('monthly_price')
+    queryset = Rental.objects.all().order_by('price')
     serializer_class = RentalSerializer
